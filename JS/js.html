@@ -10,11 +10,51 @@
     </style>
 </head>
 <body>
+    <header class="aulaJS">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Java Script</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="exercicioJS01">
+            <div class="descricao col col-md-12">
+                Exercício 1: Criar um array de números e exibir os números.
+                Desafio: Criar uma função que exibe somente os números pares no console.log
+
+            </div>
+        </div>
+        <div class="exercicioJS02">
+            <div class="descricao col col-md-12">
+                Exercício 2: Criar um array de números e exibir os números.
+                Desafio: Criar uma função que exibe somente os números ímpares no console.log
+            </div>
+        </div>   
+    </div>
 
     <script>
-        let nome = "Djonathan"
-        let sobrenome = "Tamanini"
-        console.log()
+        // Início exercício 01
+        //criando um array de números
+        const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        
+        //exibindo todos os números
+        console.log("Aula JS - Exercício 01");
+        console.log("Todos os números")
+        console.log(numeros)
+
+        // Função para exibir apenas os números pares
+        function exibirNumerosPares(array) {
+            console.log("Números pares: ");
+            for (let numero of array) {
+                if (numero % 2 === 0) {
+                    console.log(numero)
+                }
+            }
+        }   
+        
+        // Exibindo números pares
+        exibirNumerosPares(numeros);
+
+
     </script>
 </body>
 </html>
