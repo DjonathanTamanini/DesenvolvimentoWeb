@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #808085;
+}
+
+.calculadora {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tela {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="tela" disabled>
+        <div class="botoes">
+            <button onclick="adicionaNumero(1)">1</button>
+            <button onclick="adicionaNumero(2)">2</button>
+            <button onclick="adicionaNumero(3)">3</button>
+            <button onclick="escolherOperacao('+')">+</button>
+            <button onclick="adicionaNumero(4)">4</button>
+            <button onclick="adicionaNumero(5)">5</button>
+            <button onclick="adicionaNumero(6)">6</button>
+            <button onclick="escolherOperacao('-')">-</button>
+            <button onclick="adicionaNumero(7)">7</button>
+            <button onclick="adicionaNumero(8)">8</button>
+            <button onclick="adicionaNumero(9)">9</button>
+            <button onclick="escolherOperacao('*')">*</button>
+            <button onclick="adicionaNumero(0)">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="compute()">=</button>
+            <button onclick="escolherOperacao('/')">/</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
